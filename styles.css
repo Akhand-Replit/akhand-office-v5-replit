@@ -1,0 +1,89 @@
+/* Main styles */
+.stApp {
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Header styling */
+.stTitle {
+    color: #0066cc;
+    font-weight: bold;
+}
+
+/* Container styling */
+.stContainer {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Button styling */
+.stButton > button {
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    background-color: #0052a3;
+    transform: translateY(-2px);
+}
+
+/* Form styling */
+.stTextInput > div > div > input {
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+}
+
+.stTextArea > div > div > textarea {
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Tab styling */
+.stTabs {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* Profile image styling */
+.profile-image {
+    border-radius: 50%;
+    border: 2px solid #0066cc;
+}
+
+/* Message styling */
+.message-container {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+}
+
+/* Task styling */
+.task-container {
+    border-left: 4px solid #0066cc;
+    padding-left: 1rem;
+    margin: 1rem 0;
+}
+
+/* Status indicators */
+.status-active {
+    color: #28a745;
+}
+
+.status-inactive {
+    color: #dc3545;
+}
+
+/* Report styling */
+.report-container {
+    background-color: #ffffff;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}

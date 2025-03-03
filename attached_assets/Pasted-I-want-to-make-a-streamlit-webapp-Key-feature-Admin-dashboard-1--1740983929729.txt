@@ -1,0 +1,83 @@
+I want to make a streamlit webapp -
+Key feature -
+
+Admin dashboard :
+_____________________
+
+1. First of all Admin can create Company by Company Name , User name , password , Profile picture link . But admin can't create employees and the sub branches of the company . Admin only can creates Companies . 
+2. Admin can see the list of the companies , Can see the list of sub branches of the company.
+3. Admin Can Deactivate any of the company . when admin deactivate any of the company then the branches the company made and the employee they assign will also be automatically deactivated . When the company reactivate the company the branches the company made and the employee they assign will also be automatically activated .
+4. Admin Can sent message to Company (Text , links , Attachments) also can remove the message he sent .
+5. Admin can Update Profile , Like Profile name , username , profile image (By profile link) (Can't change password because it can will be static password which will be stored in streamlit secrets .)
+5. Admin username and password will be static and will be store in streamlit secrets as the project will be deployed by streamlit cloud. 
+
+
+
+Company Dashboard :
+_________________________
+1. Company can creates sub branches of the company .
+2. Company can creates Branches of the company . (Default Main Branch)
+3. Company can creates employees id by Employees Name , User name , password , Profile picture link and assign their roles . Like - "Manager" , "Asst. Manager" , "General Employees" . under the branches .
+4. Company can Update the roles of the employees .
+5. Can see the branches , Employees .
+6. Can assign tasks to any Branches or Direct any of the employees . If company assign any task to branches then those task will be assign to the all of the employees under that branches . when that task will be marked as completed by all of the employees of that branch then ultimately the task will be Completed , other wise if the Manager or the Asst. Manager mark that task as complete ultimately the task will be complete that will be shown to the Company.
+7. Can see and download (as pdf)the reports of Branches Daily , Month , Year or custom range wise .
+8. can see and download (as pdf) General employees , Managers and Asst. Manager by Daily , Month , Year or custom range wise .
+9. Can deactivate or reactivate Any of the branches or employees . If company deactivate any branches then all the employees will be deactivate automatically whose are under that branch . Again , when company activate again any of his branches then all the employees will be activated whose are under that branch .
+10. Company can switch the branches of the employee any of its branches it have .
+11. Company can deactivate or reactivate any of the employees .
+12. Can Update profiles without the username.
+13. Can send message to the Branches 
+14. can reply the message of admins
+
+
+Role :
+
+Branch Manager :
+
+1. Managers can creates only employees id by Employees Name , User name , password , Profile picture link and but those role will be assign as only General Employees under that specific branches .
+2. Can assign tasks to any of the General employees and Asst. Manager under that specific branches.  
+3.Can see and download (as pdf)the reports of General employees and Asst. Manager and himself by Daily , Month , Year or custom range wise .
+4. Can deactivate or reactivate Any employees .
+5. Can Update profiles without the username.
+6. Submit report
+7. Action to the task
+8. can reply the message of Company
+9. Can send message to the Branches
+
+Branch Ass. Manager :
+
+1. Asst. Managers can creates only employees id by Employees Name , User name , password , Profile picture link and but those role will be assign as only General Employees under that specific branches .
+2. Can assign tasks to only any of the General employees under that specific branches. But can't assign task to the Manager
+3. Can see and download (as pdf)the reports of General employees himself by Daily , Month , Year or custom range wise .
+4. Can deactivate or reactivate Any employees .
+5. Can Update profiles without the username.
+6. Submit report
+7. Action to the task
+8. can reply the message of Company
+9. Can send message to the Branches
+
+Branch Employees :
+
+1. Can see and download (as pdf)the reports of himself by Daily , Month , Year or custom range wise .
+2. Can Update profiles without the username.
+3. Submit reports
+4. Action to the task
+5 - employees can log in with the credentials the admin provides .
+6 - employees will select date and write what he did for that date and upload , which will be store in database .
+7 - another page he can see the whole records of what he did daily wise , monthly wise , yearly wise .
+8 - employees can see the tasks that assign from admin . when employee complete the task then he can mark that is done and will also be stored in database
+8. can reply the message other employee
+9. Can send message to the Branch manager , Asst manager 
+
+
+
+Important note
+
+-For database - Postgres
+-The credentials will be store in streamlit secrets
+-The webapp will be deployed by streamlit cloud hosting
+-With your code also give me requirements.txt
+-Webapp UI will be clean , modern , simple
+-Don't put the Login-Logout design in sidebar and make the UI ugly . Improve the UI For Login-Logout design.
+-Show the employee Image when they log in along with other thing
